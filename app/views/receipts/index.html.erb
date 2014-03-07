@@ -1,0 +1,53 @@
+<div class="row">
+
+<h1>Issue Provisional Receipt</h1>
+
+  <div class="small-4 large-4 columns">
+<%= render 'form' %>
+</div>
+
+  <div class="small-6 large-8 columns">
+
+<table>
+  <thead>
+    <tr>
+      <th>Date Paid</th>
+
+      <th>Receipt No</th>
+      <th>Account No</th>
+      <th>Client Name</th>
+      <th>Amount Deposited</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @receipts.each do |receipt| %>
+      <tr>
+        <td><%= receipt.DatePaid %></td>
+        <td><%= receipt.ReceiptNo %></td>
+        <td><%= receipt.AccountNo %></td>
+        <td><%= receipt.ClientName %></td>
+        <td><%= receipt.AmountDeposited %></td>
+        <td><%= receipt.Status %></td>
+        <td><%#= link_to 'Show', receipt %></td>
+        <td><%#= link_to 'Edit', edit_receipt_path(receipt) %></td>
+        <td><%#= link_to 'Destroy', receipt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+</div>
+<%#= link_to 'New Receipt', new_receipt_path %>
+
+
+
+
+
+
+
+
+
+
+

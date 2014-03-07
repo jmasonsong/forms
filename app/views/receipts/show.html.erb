@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date Paid:</strong>
+  <%= @receipt.DatePaid %>
+</p>
+
+<p>
+  <strong>Receipt No:</strong>
+  <%= @receipt.ReceiptNo %>
+</p>
+
+<p>
+  <strong>Account No:</strong>
+  <%= @receipt.AccountNo %>
+</p>
+
+<p>
+  <strong>Client Name:</strong>
+  <%= @receipt.ClientName %>
+</p>
+
+<p>
+  <strong>Amount Deposited:</strong>
+  <%= @receipt.AmountDeposited %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @receipt.Status %>
+</p>
+
+<%= link_to 'Edit', edit_receipt_path(@receipt) %> |
+<%= link_to 'Back', receipts_path %>

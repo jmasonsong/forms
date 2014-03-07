@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DatePaid: MyString
+  ReceiptNo: 1
+  AccountNo: 1
+  ClientName: MyString
+  AmountDeposited: 1
+  Status: MyString
+
+two:
+  DatePaid: MyString
+  ReceiptNo: 1
+  AccountNo: 1
+  ClientName: MyString
+  AmountDeposited: 1
+  Status: MyString
